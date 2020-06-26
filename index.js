@@ -1,5 +1,6 @@
 //require fs
-// require inquierer
+// require inquirer
+// activity 40 for example
 
 // array of questions for user
 const questions = [
