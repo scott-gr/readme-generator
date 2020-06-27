@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 //this file will have markdown styling
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require("./utils/generateMarkdown.js");
 // array of questions for user
 const questions = [
   {
@@ -69,8 +69,7 @@ const questions = [
 /// the big function! Prompts questions to user, data makes answers into objects, then writes to new markdown file.
 function init() {
   inquirer.prompt(questions).then((data) => {
-    console.log(data);
-    fs.generateMarkdown('yourReadMe.md', generateMarkdown(data), function (err) {
+    fs.writeFile('yourReadMe.md', generateMarkdown(data), function (err) {
       if (err) {
         //checks for errors
         return console.log(err);
