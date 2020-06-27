@@ -41,18 +41,10 @@ const questions = [
     message: 'What license will you use for this project?',
     name: 'license',
     choices: [
-      {
-        name: "MIT License",
-      },
-      {
-        name: "GNU General Public License",
-      },
-      {
-        name: "Mozille Public License 2.0",
-      },
-      {
-        name: "Apache License 2.0",
-      },
+      "MIT License",
+      "GNU GPL",
+      "Mozilla Public License 2.0",
+      "Apache License 2.0",
     ],
   },
   {
