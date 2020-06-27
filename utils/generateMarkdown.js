@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   return `# ${data.title}
   <img src="https://img.shields.io/badge/license-${data.license}-blue"/>
-<hr>
+  
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -12,31 +12,24 @@ function generateMarkdown(data) {
 * [License](#license)
 * [Questions](#questions)
 
-<hr>
 ## Description
 ${data.description}
 
-<hr>
 ## Installation
 ${data.install}
 
-<hr>
 ## Usage
 ${data.usage}
 
-<hr>
 ## Contributors
 ${data.contribute}
 
-<hr>
 ## Test
 ${data.test}
 
-<hr>
 ## License
 ${data.license}
 
-<hr>
 ## Questions
 Thank you for checking out my project. Please contact me at ${data.email} or visit http://github.com/${data.username}
 `;
