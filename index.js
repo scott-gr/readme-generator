@@ -66,16 +66,20 @@ const questions = [
   },
 ];
 
+
+
+// function to initialize program
+function init() {
+  inquirer.prompt(questions).then((data) => {
+    fs.writeToFile('') /// add file path
+  })
+// use the inquirer package
+}
+
 // function to write README file
 function writeToFile(fileName, data) {
   //us the fs package
 }
-
-// function to initialize program
-function init() {
-// use the inquierer package
-}
-
 // function call to initialize program
 init();
 
