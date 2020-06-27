@@ -46,10 +46,10 @@ const questions = [
       },
       {
         name: "GNU General Public License",
-      }
+      },
       {
         name: "Mozille Public License 2.0",
-      }
+      },
       {
         name: "Apache License 2.0",
       },
