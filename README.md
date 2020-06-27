@@ -20,7 +20,11 @@ Clone the GitHub repo. Navigate to the file folder in your terminal, and enter '
 
 <hr>
 ## Usage
-After installation, answer each question prompt as they appear in the terminal. Press enter to submit each answer. When complete, yourReadMe.md will appear in the root directory.
+After installation, answer each question prompt as they appear in the terminal. Press enter to submit each answer. 
+<img src ="Assets/readme-gen-usage1.png">
+
+When complete, yourReadMe.md will appear in the root directory.
+<img src ="Assets/readme-gen-usage2.png">
 
 <hr>
 ## Contributors
