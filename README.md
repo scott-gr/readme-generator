@@ -20,6 +20,8 @@ Clone the GitHub repo. Navigate to the file folder in your terminal, and enter '
 
 <hr>
 ## Usage
+Video demo: https://drive.google.com/file/d/1-YExky6RrYpIXEf6GknOucJ2oTQ3C5h7/view
+
 After installation, answer each question prompt as they appear in the terminal. Press enter to submit each answer. 
 <img src ="Assets/readme-gen-usage1.png">
 
