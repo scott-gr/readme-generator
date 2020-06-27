@@ -1,8 +1,8 @@
+//requirements
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require("util");
-// activity 40 for example
-
+//this file will have markdown styling
+const generateMarkdown = require('./utils/generateMarkdown.js');
 // array of questions for user
 const questions = [
   {
@@ -35,6 +35,7 @@ const questions = [
     message: 'Please provide instructions for testing the code.',
     name: 'test',
   },
+  ///will try to offer choices here. Test if this works...
   {
     type: 'input',
     message: 'What license will you use for this project?',
@@ -45,10 +46,10 @@ const questions = [
       },
       {
         name: "GNU General Public License",
-      }
+      },
       {
         name: "Mozille Public License 2.0",
-      }
+      },
       {
         name: "Apache License 2.0",
       },
@@ -65,22 +66,19 @@ const questions = [
     name: 'username',
   },
 ];
-
-
-
-// function to initialize program
+/// the big function! Prompts questions to user, data makes answers into objects, then writes to new markdown file.
 function init() {
   inquirer.prompt(questions).then((data) => {
-    fs.writeToFile('') /// add file path
-  })
-// use the inquirer package
-}
-
-// function to write README file
-function writeToFile(fileName, data) {
-  //us the fs package
+    console.log(data);
+    fs.generateMarkdown('yourReadMe.md', generateMarkdown(data), function (err) {
+      if (err) {
+        //checks for errors
+        return console.log(err);
+      }
+      // console log success
+      console.log('Successfully generated yourReadMe.md!');
+    });
+  });
 }
 // function call to initialize program
 init();
-
- // see documentaion on npmjs
