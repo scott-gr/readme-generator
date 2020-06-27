@@ -37,7 +37,7 @@ const questions = [
   },
   ///will try to offer choices here. Test if this works...
   {
-    type: 'input',
+    type: 'list',
     message: 'What license will you use for this project?',
     name: 'license',
     choices: [
