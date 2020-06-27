@@ -3,13 +3,13 @@ function generateMarkdown(data) {
   return `# ${data.title}
 <hr>
 ## Table of Contents
-* [Description]
-* [Intallation]
-* [Usage]
-* [License]
-* [Contributors]
-* [Test]
-* [Questions]
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributors](#contributors)
+* [Test](#test)
+* [License](#license)
+* [Questions](#questions)
 
 <hr>
 ## Description
